@@ -6,12 +6,12 @@
 /*   By: ejoo-tho <ejoo-tho@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 11:06:01 by ejoo-tho          #+#    #+#             */
-/*   Updated: 2022/07/08 12:39:51 by ejoo-tho         ###   ########.fr       */
+/*   Updated: 2022/07/21 15:56:43 by ejoo-tho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#ifndef CHECKER_H
+# define CHECKER_H
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -67,7 +67,6 @@ void	pb(t_list **stack_a, t_list **stack_b, t_data *data);
 void	pa(t_list **stack_a, t_list **stack_b, t_data *data);
 int		leave_main(int *tab, int *size, int *error);
 t_data	init_data(int *tab, int *size);
-//void ft_printlist (t_list **stack);
 size_t	ft_strlen(const char *s);
 char	*ft_strjoin(char *s1, char *s2);
 int		search_newline(char *s);
@@ -78,4 +77,6 @@ char	*get_next_line(int fd, int *error);
 void	execute_cmd(char *s, t_data *data, int *error);
 int		check_sorted_a(t_data *data);
 void	final_check(t_data *data);
+//void ft_printlist (t_list **stack);
+
 #endif

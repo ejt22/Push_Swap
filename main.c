@@ -6,7 +6,7 @@
 /*   By: ejoo-tho <ejoo-tho@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 11:28:50 by ejoo-tho          #+#    #+#             */
-/*   Updated: 2022/07/20 14:34:01 by ejoo-tho         ###   ########.fr       */
+/*   Updated: 2022/07/21 12:35:46 by ejoo-tho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,9 +60,9 @@ int	main(int argc, char **argv)
 	if (leave_main(tab, &size, &error))
 		return (0);
 	data = init_data(tab, &size);
-	if (argc >= 3 && argc <= 6)
+	if (size >= 2 && size <= 5)
 		medium_sort(&data.stack_a, &data.stack_b, &data);
-	else if (argc > 6)
+	else if (size > 5)
 		big_sort(&data);
 	ft_freelist(&data.stack_a);
 	return (0);
