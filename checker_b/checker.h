@@ -6,7 +6,7 @@
 /*   By: ejoo-tho <ejoo-tho@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 11:06:01 by ejoo-tho          #+#    #+#             */
-/*   Updated: 2022/07/21 15:56:43 by ejoo-tho         ###   ########.fr       */
+/*   Updated: 2022/07/25 12:53:21 by ejoo-tho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
-# include <fcntl.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 5
